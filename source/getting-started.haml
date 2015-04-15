@@ -1,24 +1,19 @@
 %nav.light-blue.lighten-1{:role => "navigation"}
   .nav-wrapper.container
-    %a#logo-container.brand-logo{:href => "#"} Logo
-    %ul.right.hide-on-med-and-down
-      %li
-        %a{:href => "#"} Navbar Link
-    %ul#nav-mobile.side-nav{:style => "left: -250px;"}
-      %li
-        %a{:href => "#"} Navbar Link
-    %a.button-collapse{"data-activates" => "nav-mobile", :href => "#"}
-      %i.mdi-navigation-menu
+    =link_to 'NextBuild', '#', class: 'logo-container brand-logo'
+    %ul#nav-mobile.right.hide-on-med-and-down
+      - %w(About News Location Contact Register).each do |item|
+        %li= link_to item, '#'
 
 #index-banner.section.no-pad-bot
   .container
     %br
     %br
-    %h1.header.center.orange-text Starter Template
+    %h1.header.center.orange-text Software Development Conference
     .row.center
-      %h5.header.col.s12.light A modern responsive front-end framework based on Material Design
+      %h5.header.col.s12.light Sat 30 May 2015
     .row.center
-      %a#download-button.btn-large.waves-effect.waves-light.orange{:href => "http://materializecss.com/getting-started.html"} Get Started
+      =link_to 'Register Now', '#', class: 'download-button btn-large waves-effect waves-light orange'
     %br
     %br
 .container
