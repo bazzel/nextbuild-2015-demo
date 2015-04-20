@@ -1,0 +1,21 @@
+%footer.page-footer
+  .container
+    .row
+      .col.l6.s12
+        %h5 Company Bio
+        %p= lorem.paragraph
+      .col.l3.s12
+        %h5 Settings
+        %ul
+          - 4.times do |i|
+            %li= link_to "Link #{i+1}", '#'
+      .col.l3.s12
+        %h5 Connect
+        %ul
+          - 4.times do |i|
+            %li= link_to "Link #{i+1}", '#'
+  .footer-copyright
+    .container
+      Made with
+      = link_to 'Materialize', 'http://materializecss.com'
+

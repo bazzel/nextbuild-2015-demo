@@ -1,0 +1,8 @@
+.contact-us {
+  h3, h4 {
+    @extend .center;
+  }
+  p {
+    @extend .light;
+  }
+}

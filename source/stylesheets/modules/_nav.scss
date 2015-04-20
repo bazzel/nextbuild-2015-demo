@@ -1,0 +1,13 @@
+nav {
+  color: $nav-color;
+  background: $nav-bg;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: $nav-brand-logo-color;
+}
+
+.button-collapse {
+  color: $button-collapse-color;
+}

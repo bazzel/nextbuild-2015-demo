@@ -1,0 +1,18 @@
+footer.page-footer {
+  margin: 0;
+  background: $footer-bg;
+  color: $footer-color;
+  h5 {
+    color: $footer-header-color;
+  }
+  a {
+    color: $footer-link-color;
+  }
+
+  .footer-copyright {
+    background: $footer-copyright-bg;
+    a {
+      color: $footer-copyright-link-color;
+    }
+  }
+}

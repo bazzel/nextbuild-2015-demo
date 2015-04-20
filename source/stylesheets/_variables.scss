@@ -1,0 +1,62 @@
+$hue:                          174;
+
+$primary-color:                hsl($hue, 42%, 51%); // #4db6ac;
+$primary-color-darker:         hsl($hue, 63%, 40%); // #26a69a;
+$primary-color-darkest:        hsl($hue, 100%, 29%); // #009688;
+
+$secondary-color:              hsl($hue+180, 25%, 38%); // #795548;
+
+$text-color:                   rgba(black, 0.87);
+
+// Nav
+//
+$nav-color:                    $text-color;
+$nav-bg:                       white;
+$nav-brand-logo-color:         $text-color;
+
+//
+// End Nav
+
+// Button Collapse
+//
+$button-collapse-color:        $primary-color-darker;
+//
+// End Button Collapse
+
+// Parallax container
+//
+$parallax-container-color:     rgba(white, 0.9);
+//
+// End Parallax container
+
+
+// Banner
+//
+$banner-header-color:          $primary-color;
+//
+// End Banner
+
+// Download button
+//
+$download-btn-bg:              $primary-color-darker;
+$download-btn-color:           white;
+//
+// End Download button
+
+// Icons
+//
+$icon-color:                   $secondary-color;
+//
+// End Icon block
+
+// Footer
+//
+$footer-color:                 #f5f5f5;
+$footer-bg:                    $primary-color-darkest;
+$footer-header-color:          white;
+$footer-link-color:            white;
+
+$footer-copyright-bg:          scale_color($primary-color-darkest, $saturation: -7%);
+$footer-copyright-link-color:  hsl(15, 15%, 69%); // #bcaaa4;
+//
+// End Footer

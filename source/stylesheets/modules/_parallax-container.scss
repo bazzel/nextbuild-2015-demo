@@ -1,0 +1,22 @@
+.parallax-container {
+  color: $parallax-container-color;
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  h5 {
+    @extend .light;
+  }
+  .section {
+    width: 100%;
+  }
+  .row {
+    @extend .center;
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+}

@@ -1,0 +1,8 @@
+.features {
+  h2, h5 {
+    @extend .center;
+  }
+  p {
+    @extend .light;
+  }
+}

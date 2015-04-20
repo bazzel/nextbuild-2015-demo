@@ -1,0 +1,13 @@
+%nav{:role => "navigation"}
+  .nav-wrapper.container
+    =link_to 'NextBuild', '#', class: 'logo-container brand-logo'
+    %ul.right.hide-on-med-and-down
+      - %w(About News Location Contact Register).each do |item|
+        %li= link_to item, '#'
+    %ul#nav-mobile.side-nav
+      - %w(About News Location Contact Register).each do |item|
+        %li= link_to item, '#'
+
+    %a.button-collapse{"data-activates" => "nav-mobile", :href => "#"}
+      %i.mdi-navigation-menu
+

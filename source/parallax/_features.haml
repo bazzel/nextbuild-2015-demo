@@ -1,0 +1,12 @@
+.container.features
+  .section
+    / Icon Section
+    .row
+      - ['image-flash-on', 'social-group', 'action-settings'].each do |fig|
+        .col.s12.m4
+          .icon-block
+            %h2
+              %i(class="mdi-#{fig}")
+            %h5= lorem.words 4
+            %p= lorem.paragraph
+
