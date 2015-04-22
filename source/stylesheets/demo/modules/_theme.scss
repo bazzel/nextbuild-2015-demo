@@ -1,0 +1,80 @@
+.theme {
+  @include box-shadow(rgba(black, 0.23) 0 3px 10px, rgba(black, 0.16) 0 3px 10px);
+
+  .theme__status {
+    background: $dark-primary-color;
+    height: 25px;
+  }
+
+  .theme__toolbar {
+    background: $primary-color;
+    height: 240px;
+    position: relative;
+    @include box-shadow(rgba(black, 0.2) 0 2px 6px);
+  }
+
+  .theme__toolbar-navigation {
+    i {
+      color: $text-color;
+      font-size: 26px;
+      position: absolute;
+      cursor: pointer;
+    }
+    .more {
+      top: 20px;
+      right: 12px;
+    }
+    .back {
+      top: 20px;
+      left: 20px;
+    }
+  }
+  .theme__toolbar-headings {
+    padding: 85px 20px 0 75px;
+    h1 {
+      color: $text-color;
+    }
+    h2 {
+      color: $light-primary-color;
+    }
+  }
+  .theme__button {
+    color: $text-color;
+    font-family: "Material-Design-Icons";
+    font-size: 26px;
+    line-height: 26px;
+    text-align: center;
+    background: $accent-color;
+    width: 56px;
+    height: 56px;
+    padding: 15px;
+    position: absolute;
+    bottom: -25px;
+    right: 25px;
+    cursor: pointer;
+    @include box-shadow(rgba(black, 0.23) 0 3px 10px, rgba(black, 0.16) 0 3px 10px);
+    @include border-radius(50%);
+  }
+  .theme__body {
+    padding: 8px 0;
+    border-left: 1px solid $theme-body-border-color;
+    border-right: 1px solid $theme-body-border-color;
+    background: $theme-body-bg;
+    li {
+      padding: 16px 0;
+      border-bottom: 1px solid $theme-body-li-border-color;
+      @include clearfix;
+      &:last-child {
+        border: none;
+      }
+      i {
+        color: $secondary-text;
+        font-size: 28px;
+        line-height: 1;
+        padding: 8px 14px;
+        float: left;
+        margin-right: 20px;
+      }
+    }
+  }
+}

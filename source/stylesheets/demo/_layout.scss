@@ -1,0 +1,17 @@
+// Flexbox approach
+/*html, body {*/
+  /*height: 100%;*/
+/*}*/
+
+/*.container {*/
+  /*height: 100%;*/
+  /*@include display-flex;*/
+  /*@include justify-content(center);*/
+  /*@include align-items(center);*/
+/*}*/
+// End Flexbox approach
+
+.theme-container {
+  margin: 100px auto 0;
+  width: 420px;
+}
