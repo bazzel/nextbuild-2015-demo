@@ -4,7 +4,7 @@
 //
 // $accent-color:                #FF5252;
 
-$hue : 207;
+$hue:                         207;
 
 $primary-color:               hsl($hue, 100%, 50%);
 $dark-primary-color:          scale-color($primary-color, $lightness: -20%);

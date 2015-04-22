@@ -1,5 +1,12 @@
 ---
 css: demo
+title: NextBuild
+subtitle: Software Development Conference
+talks:
+  - { subject: 'Reactive AngularJS', time: '11:50 - 12:20' }
+  - { subject: 'Make color schemes a no-brainer with Sass', time: '13:40 - 14:10', current: yes }
+  - { subject: 'React/CQRS', time: '14:25 - 14:55' }
+  - { subject: 'Reactive Frontend', time: '15:00 - 15:30' }
 ---
 
 .theme-container
@@ -10,21 +17,16 @@ css: demo
         %i.mdi-navigation-more-vert.more
         %i.mdi-navigation-menu.back
       .theme__toolbar-headings
-        %h1 Palette preview
-        %h2 Full Palette colors below
+        %h1= current_page.data.title
+        %h2= current_page.data.subtitle
       .theme__button
         %i.mdi-action-grade
     .theme__body
       %ul
-        %li
-          %i.mdi-action-label
-          %p
-            Label
-            %br
-              %em April 21st
-        %li
-          %i.mdi-action-schedule
-          %p
-            Label
-            %br
-              %em April 19th
+        - current_page.data.talks.each do |talk|
+          %li
+            %i{class: (talk.current && 'mdi-action-schedule') || 'mdi-action-label'}
+            %p
+              = talk.subject
+              %br
+                %em= talk.time
