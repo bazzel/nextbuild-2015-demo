@@ -15,10 +15,14 @@
 
   .theme__toolbar-navigation {
     i {
+      @include transition(all 200ms ease);
       color: $text-color;
       font-size: 26px;
       position: absolute;
       cursor: pointer;
+      &:hover {
+        @include rotate(360deg);
+      }
     }
     .more {
       top: 20px;
@@ -39,6 +43,7 @@
     }
   }
   .theme__button {
+    @include transition(all 200ms ease);
     color: $text-color;
     font-family: "Material-Design-Icons";
     font-size: 26px;
@@ -54,6 +59,9 @@
     cursor: pointer;
     @include box-shadow(rgba(black, 0.23) 0 3px 10px, rgba(black, 0.16) 0 3px 10px);
     @include border-radius(50%);
+      &:hover {
+        @include transform(scale(1.2) rotate(90deg));
+      }
   }
   .theme__body {
     padding: 8px 0;
