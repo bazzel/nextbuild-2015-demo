@@ -7,8 +7,13 @@
   }
 
   .theme__toolbar {
-    background: $primary-color;
-    height: 240px;
+    background: {
+      image: linear-gradient(rgba($primary-color, 0.35), rgba($primary-color, 0.35)), url('http://lorempixel.com/420/240');
+      repeat: no-repeat;
+      color: $primary-color;
+
+    }
+    height: 240px+100px;
     position: relative;
     @include box-shadow(rgba(black, 0.2) 0 2px 6px);
   }
@@ -34,7 +39,7 @@
     }
   }
   .theme__toolbar-headings {
-    padding: 85px 20px 0 75px;
+    padding: 258px 20px 0 75px;
     h1 {
       color: $text-color;
     }
