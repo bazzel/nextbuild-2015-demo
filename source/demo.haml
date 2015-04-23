@@ -24,8 +24,8 @@ talks:
     .theme__body
       %ul
         - current_page.data.talks.each do |talk|
-          %li
-            %i{class: (talk.current && 'mdi-action-schedule') || 'mdi-action-label'}
+          %li{class: talk.current && 'current'}
+            %i{class: (talk.current && 'mdi-action-label') || 'mdi-action-schedule'}
             %p
               = talk.subject
               %br
