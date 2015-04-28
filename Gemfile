@@ -15,3 +15,5 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 gem 'haml'
 gem 'materialize-sass'
 gem 'jquery-middleman'
+
+gem 'sass-color-schemes'

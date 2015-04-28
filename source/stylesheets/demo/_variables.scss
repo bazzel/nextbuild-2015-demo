@@ -4,13 +4,43 @@
 //
 // $accent-color:                #FF5252;
 
-$hue:                         207;
+$base-color:                  #6893A6;
+/*$variation:                 'shiny';*/
+$scheme:                      'tetrad';
+$angle:                       30;
+$complement:                  true;
 
-$primary-color:               hsl($hue, 100%, 50%);
-$dark-primary-color:          scale-color($primary-color, $lightness: -20%);
-$light-primary-color:         scale-color($primary-color, $saturation: -40%, $lightness: 70%);
+$color-primary-0:             nth(primary-colors(), 1);
+$color-primary-1:             nth(primary-colors(), 2);
+$color-primary-2:             nth(primary-colors(), 3);
+$color-primary-3:             nth(primary-colors(), 4);
+$color-primary-4:             nth(primary-colors(), 5);
 
-$accent-color:                complement($primary-color);
+$color-complement-0:          nth(complement-colors(), 1);
+$color-complement-1:          nth(complement-colors(), 2);
+$color-complement-2:          nth(complement-colors(), 3);
+$color-complement-3:          nth(complement-colors(), 4);
+$color-complement-4:          nth(complement-colors(), 5);
+
+$color-secondary-1-0:         nth(secondary-1-colors(), 1);
+$color-secondary-1-1:         nth(secondary-1-colors(), 2);
+$color-secondary-1-2:         nth(secondary-1-colors(), 3);
+$color-secondary-1-3:         nth(secondary-1-colors(), 4);
+$color-secondary-1-4:         nth(secondary-1-colors(), 5);
+
+$color-secondary-2-0:         nth(secondary-2-colors(), 1);
+$color-secondary-2-1:         nth(secondary-2-colors(), 2);
+$color-secondary-2-2:         nth(secondary-2-colors(), 3);
+$color-secondary-2-3:         nth(secondary-2-colors(), 4);
+$color-secondary-2-4:         nth(secondary-2-colors(), 5);
+
+
+
+$primary-color:               $color-primary-0;;
+$dark-primary-color:          $color-primary-3;
+$light-primary-color:         $color-primary-1;
+
+$accent-color:                $color-complement-0;
 
 $text-color:                  white;
 $primary-text:                #212121;
