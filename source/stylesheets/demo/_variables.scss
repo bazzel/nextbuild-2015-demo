@@ -4,11 +4,10 @@
 //
 // $accent-color:                #FF5252;
 
-$base-color:                  #6893A6;
-/*$variation:                 'shiny';*/
-$scheme:                      'tetrad';
-$angle:                       30;
-$complement:                  true;
+$sass-color-schemes: (
+  base-color:                  #2980B9,
+  scheme:                      'tetrad'
+);
 
 $color-primary-0:             nth(primary-colors(), 1);
 $color-primary-1:             nth(primary-colors(), 2);
