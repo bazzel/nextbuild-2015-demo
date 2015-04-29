@@ -16,4 +16,4 @@ gem 'haml'
 gem 'materialize-sass'
 gem 'jquery-middleman'
 
-gem 'sass-color-schemes'
+gem 'sass-color-schemes'#, path: '/Users/patrickbaselier/code/personal/sass-color-schemes'

@@ -7,3 +7,5 @@
 @import './demo/base';
 @import './demo/layout';
 @import './demo/modules';
+
+@include scs-test($height: 2em);
