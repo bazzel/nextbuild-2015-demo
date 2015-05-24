@@ -8,8 +8,8 @@
 }
 
 .theme__toolbar {
+  @include background(linear-gradient(rgba($dark-primary-color, 0.35), rgba($primary-color, 0.35)), url('http://lorempixel.com/g/420/240'));
   background: {
-    image: linear-gradient(rgba($dark-primary-color, 0.35), rgba($primary-color, 0.35)), url('http://lorempixel.com/g/420/240');
     repeat: no-repeat;
     color: $primary-color;
   }
