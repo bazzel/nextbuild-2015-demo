@@ -1,0 +1,10 @@
+$hue:                  0;
+$saturation:           100%;
+$lightness:            50%;
+
+$primary-color:        hsl($hue, $saturation, $lightness);
+$dark-primary-color:   scale-color($primary-color, $saturation:  -60%);
+$light-primary-color:  scale-color($primary-color, $lightness:   60%);
+
+$accent-color:         complement($primary-color);
+// $accent-color:         ryb-complement($primary-color);

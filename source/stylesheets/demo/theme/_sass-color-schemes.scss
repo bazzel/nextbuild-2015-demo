@@ -1,0 +1,12 @@
+$sass-color-schemes: (
+  base-color:                  #2980B9,
+  scheme:                      'monochromatic'
+);
+
+$primary-color:               nth(scs-primary-colors(), 1);
+$dark-primary-color:          nth(scs-primary-colors(), 4);
+$light-primary-color:         nth(scs-primary-colors(), 2);
+
+$accent-color:                nth(scs-complement-colors(), 1);
+
+// @include scs-test($height: 2em);

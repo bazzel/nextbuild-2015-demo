@@ -1,0 +1,25 @@
+.theme__body {
+  padding: 8px 0;
+  border-left: 1px solid $theme-body-border-color;
+  border-right: 1px solid $theme-body-border-color;
+  background: $theme-body-bg;
+  li {
+    padding: 16px 0;
+    border-bottom: 1px solid $theme-body-li-border-color;
+    @include clearfix;
+    &:last-child {
+      border: none;
+    }
+    &.current i {
+      color: $accent-color;
+    }
+    i {
+      color: $secondary-text;
+      font-size: 28px;
+      line-height: 1;
+      padding: 8px 14px;
+      float: left;
+      margin-right: 20px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.theme__button {
+  @include transition(all 200ms ease);
+  color: $text-color;
+  font-family: "Material-Design-Icons";
+  font-size: 26px;
+  line-height: 26px;
+  text-align: center;
+  background: $accent-color;
+  width: 56px;
+  height: 56px;
+  padding: 15px;
+  position: absolute;
+  bottom: -25px;
+  right: 25px;
+  cursor: pointer;
+  @include box-shadow(rgba(black, 0.23) 0 3px 10px, rgba(black, 0.16) 0 3px 10px);
+  @include border-radius(50%);
+  &:hover {
+    @include transform(scale(1.2) rotate(90deg));
+  }
+}

@@ -101,11 +101,11 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
-    rb-fsevent (0.9.4)
+    rb-fsevent (0.9.5)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
-    sass (3.4.13)
-    sass-color-schemes (0.3.1)
+    sass (3.4.14)
+    sass-color-schemes (0.4.0)
       color-schemer (~> 0.2.8)
       compass (~> 1.0)
     sprockets (2.12.3)
@@ -134,6 +134,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  color-schemer
   haml
   jquery-middleman
   materialize-sass

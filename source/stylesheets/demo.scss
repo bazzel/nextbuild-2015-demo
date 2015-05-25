@@ -4,8 +4,8 @@
 @import 'sass-color-schemes';
 
 @import './demo/variables';
+@import './demo/theme';
 @import './demo/base';
 @import './demo/layout';
 @import './demo/modules';
 
-@include scs-test($height: 2em);
