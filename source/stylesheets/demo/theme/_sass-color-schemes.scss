@@ -1,7 +1,18 @@
-$sass-color-schemes: (
-  base-color:                  #2980B9,
-  scheme:                      'monochromatic'
-);
+// $sass-color-schemes: (
+//   base-color:                  #2980B9,
+// );
+
+// $sass-color-schemes: (
+//   base-color:                  #795548,
+//   variation:                   'pastel'
+// );
+
+// $sass-color-schemes: (
+//   base-color:         #6893A6,
+//   variation:          'shiny',
+//   scheme:             'adjacent',
+//   angle:              25
+// );
 
 $primary-color:               nth(scs-primary-colors(), 1);
 $dark-primary-color:          nth(scs-primary-colors(), 4);
