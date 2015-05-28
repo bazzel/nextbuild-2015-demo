@@ -27,6 +27,9 @@ talks:
           %li{class: talk.current && 'current'}
             %i{class: (talk.current && 'mdi-action-label') || 'mdi-action-schedule'}
             %p
-              = talk.subject
-              %br
-                %em= talk.time
+              %div{class: !talk.current && 'other'}
+                %span= talk.subject
+                - unless talk.current
+                  ~ '&nbsp;&nbsp;Ember.js'
+                %br
+                  %em= talk.time
